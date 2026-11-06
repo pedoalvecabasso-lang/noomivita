@@ -40,3 +40,8 @@ static int airborne = 0, landed = 0, flips = 0, best = 0;
 static const char *msg = "";
 static int msgTimer
 = 0;
+    vita2d_free_pgf(font);
+    vita2d_fini();
+    sceKernelExitProcess(0);
+    return 0;
+}
